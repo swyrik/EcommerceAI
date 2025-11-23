@@ -1,0 +1,19 @@
+__dirname: C:\Users\GRAVITY\.gemini\antigravity\scratch
+[36mvite v6.4.1 [32mbuilding for production...[36m[39m
+transforming...
+[31mUnable to resolve `@import "tw-animate-css"` from C:/Users/GRAVITY/.gemini/antigravity/scratch/src[39m
+[32m✓[39m 14 modules transformed.
+[31m✗[39m Build failed in 305ms
+[31merror during build:
+[31m[vite:css] [postcss] ENOENT: no such file or directory, open 'C:\Users\GRAVITY\.gemini\antigravity\scratch\tw-animate-css'[31m
+file: [36mC:/Users/GRAVITY/.gemini/antigravity/scratch/src/index.css:undefined:NaN[31m
+    at async open (node:internal/fs/promises:641:25)
+    at async Object.readFile (node:internal/fs/promises:1245:14)
+    at async Object.load (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:43756:25)
+    at async loadImportContent (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-C9BXG1mU.js:673:19)
+    at async Promise.all (index 0)
+    at async resolveImportId (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-C9BXG1mU.js:629:27)
+    at async parseStyles$1 (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-C9BXG1mU.js:537:5)
+    at async Object.Once (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-C9BXG1mU.js:794:22)
+    at async LazyResult.runAsync (C:\Users\GRAVITY\.gemini\antigravity\scratch\node_modules\postcss\lib\lazy-result.js:293:11)
+    at async runPostCSS (file:///C:/Users/GRAVITY/.gemini/antigravity/scratch/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:43853:21)[39m
