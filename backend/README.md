@@ -52,6 +52,12 @@ This application allows users to upload PDF documents, indexes them into Apache 
    }'
    ```
 
+   ```bash
+   url.exe -X POST http://localhost:8983/solr/documents/schema -H "Content-type:application/json" --data-binary '{\"add-field-type\":{\"name\":\"knn_vector\",\"class\":\"solr.DenseVectorField\",\"vectorDimension\":384,\"similarityFunction\":\"cosine\"},\"add-field\":{\"name\":\"vector\",\"type\":\"knn_vector\",\"indexed\":true,\"stored\":true},\"add-field\":{\"name\":\"text\",\"type\":\"text_general\",\"indexed\":true,\"stored\":true,\"multiValued\":false},\"add-field\":{\"name\":\"filename\",\"type\":\"string\",\"indexed\":true,\"stored\":true}}'
+   ```
+
+  
+
 ## Running the Application
 
 1. Navigate to the `backend` directory.
@@ -65,8 +71,9 @@ This application allows users to upload PDF documents, indexes them into Apache 
 
 ### Upload Document
 ```bash
-curl -F "file=@/path/to/your/document.pdf" http://localhost:8080/api/upload
+curl.exe -F "file=@c:\Users\GRAVITY\.gemini\antigravity\scratch\documents\Biotechnology and Bioengineering.pdf" http://localhost:8080/api/upload
 ```
+
 
 ### Search
 ```bash
