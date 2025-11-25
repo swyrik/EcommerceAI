@@ -1,6 +1,0 @@
-com\example\solrsearch\SolrSearchApplication.class
-com\example\solrsearch\service\DocumentService.class
-com\example\solrsearch\service\SearchService.class
-com\example\solrsearch\controller\SearchController.class
-com\example\solrsearch\service\EmbeddingService.class
-com\example\solrsearch\config\SolrConfig.class
